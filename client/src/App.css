@@ -142,7 +142,11 @@ body,
   margin-bottom: 25px;
   width: var(--container-width);
   border-radius: 10px;
-  /* display: none; */
+  display: none; 
+}
+
+.sharing-container.active {
+  display: block;
 }
 
 .sharing-container p {
