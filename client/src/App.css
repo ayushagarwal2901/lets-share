@@ -216,6 +216,13 @@ body,
   outline: none;
 }
 
+.email-container .filed {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
 .send-btn-container button {
   font-size: 18px;
   padding: 8px 40px;
@@ -252,5 +259,11 @@ body,
   }
   .image-vector {
     display: none;
+  }
+  .email-container .filed {
+    flex-direction: column;
+  }
+  .email-container .filed {
+    width: 300px;
   }
 }
