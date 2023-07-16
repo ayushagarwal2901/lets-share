@@ -259,7 +259,7 @@ body,
 
 @media screen and (max-width: 900px) {
   :root {
-    --container-width: 320px;
+    --container-width: 300px;
   }
   .image-vector {
     display: none;
