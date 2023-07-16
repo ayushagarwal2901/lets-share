@@ -63,6 +63,7 @@ function App() {
           </div>
         </form>
         <div className="progress-container">
+          <div className="bg-progress"></div>
 
           <div className="sharing-container">
             <div className="input-container">
