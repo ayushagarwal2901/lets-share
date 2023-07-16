@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URI = process.env.API_URI;
+const API_URI = 'https://lets-share.onrender.com';
 
 export const uploadFile = async (data) => {
     try {
