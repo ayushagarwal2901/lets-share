@@ -43,6 +43,17 @@ function App() {
     }
   }
 
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setResult(inputValue);
+
+    if (inputValue) {
+      document.querySelector('.sharing-container').classList.add('active');
+    } else {
+      document.querySelector('.sharing-container').classList.remove('active');
+    }
+  }
+
   return (
     <div>
       <section className="upload-container">
@@ -69,7 +80,7 @@ function App() {
             <div className="input-container">
             {result && (
               <div className="input-container">
-                <input type="text" id="fileURL" readOnly value={result} />
+                <input type="text" id="fileURL" readOnly value={result} onChange={handleInputChange} />
                 <img src={copyIcon} id="copyURLBtn" alt="copy to clipboard icon" onClick={copyURLToClipboard} />
               </div>
             )}
